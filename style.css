@@ -9,6 +9,9 @@
   --paper: #fffefa;
   --line: rgba(0,0,0,.12);
   --shadow: 0 18px 45px rgba(45, 88, 10, .16);
+  --sky: #62b8ff;
+  --sky-dark: #1f73d4;
+  --sky-soft: #dff6ff;
 }
 
 * { box-sizing: border-box; }
@@ -37,10 +40,10 @@ body {
   background:
     radial-gradient(circle at 18% 22%, rgba(255,255,255,.9) 0 9%, transparent 10%),
     radial-gradient(circle at 78% 0%, rgba(255,255,255,.8) 0 10%, transparent 11%),
-    linear-gradient(145deg, #ccff62 0%, #faffda 62%, #fff 100%);
-  border: 5px solid var(--green);
+    linear-gradient(145deg, #dff6ff 0%, #eef8ff 55%, #ffffff 100%);
+  border: 5px solid var(--sky);
   box-shadow: var(--shadow);
-  padding: 18px 18px 20px;
+  padding: 14px 18px 16px;
   text-align: center;
 }
 
@@ -48,7 +51,7 @@ body {
 .hero::after {
   content: "♥ ♥ ♥";
   position: absolute;
-  color: var(--green);
+  color: var(--sky);
   font-size: clamp(28px, 7vw, 66px);
   letter-spacing: .25em;
   opacity: .85;
@@ -59,18 +62,19 @@ body {
 .hero::after { right: 12px; top: 16px; }
 
 .hero-inner { position: relative; z-index: 1; }
-.eyebrow { margin: 0 0 2px; color: var(--green-dark); font-weight: 800; letter-spacing: .12em; }
+.eyebrow { margin:0 0 2px; color:var(--sky-dark); font-weight:800; letter-spacing:.12em; font-size:1rem; }
 
 h1 {
-  margin: 0;
-  color: var(--green-dark);
-  font-size: clamp(30px, 6vw, 58px);
-  font-weight: 950;
-  letter-spacing: .04em;
-  text-shadow: 0 5px 0 #fff, 0 0 10px rgba(255,255,255,.8);
+  margin:0;
+  color:var(--sky-dark);
+  font-size:clamp(25px,5vw,46px);
+  font-weight:950;
+  letter-spacing:.02em;
+  line-height:1.05;
+  text-shadow:0 4px 0 #fff,0 0 10px rgba(255,255,255,.8);
 }
 
-.lead { margin: 10px 0 0; font-weight: 700; color: #375f1c; }
+.lead { margin:6px 0 0; font-weight:700; color:#446b8d; font-size:.95rem; white-space:nowrap; }
 
 .panel {
   position: relative;
